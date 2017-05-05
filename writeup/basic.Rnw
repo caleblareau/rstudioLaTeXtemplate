@@ -1,0 +1,78 @@
+\documentclass{article}
+\usepackage{enumitem}
+\usepackage{ amssymb }
+\usepackage{ textcomp }
+\usepackage{longtable}
+\usepackage{amsmath,tabu}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage[figurename=Supplemental Figure]{caption}
+\usepackage{titling}
+
+\setlength{\droptitle}{-5em}  
+
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\title{Title yannow}
+\author{Caleb Lareau}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+\section{Question 1}
+\begin{enumerate}[label=(\Alph*)]
+\item 
+a
+<<part1a, message = FALSE, warning = FALSE>>=
+print("hi")
+@
+
+
+\end{enumerate}
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=\linewidth,height=3.5in]{images/01colorkey.png}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=\linewidth,height=3.5in]{images/01colorkey.png}
+\end{subfigure}
+\caption{I got twooooo figures.}
+\end{figure}
+
+
+\section{Question 2}
+\begin{enumerate}[label=(\Alph*)]
+\item
+<<part2a, message = FALSE, warning = FALSE>>=
+print("bye")
+@
+\item
+ 
+\end{enumerate}
+
+
+
+
+
+AML ~\cite{corces2016lineage}
+GPLVM ~\cite{lawrence2004gaussian}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliography{biblio}{}
+\bibliographystyle{plain}
+
+\end{document}
